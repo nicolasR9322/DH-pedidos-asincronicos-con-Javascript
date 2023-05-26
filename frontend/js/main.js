@@ -6,7 +6,15 @@ window.onload = () => {
 
   // Aqui debemos agregar nuestro fetch
 
-
+fetch("http://localhost:3031/api/movies")
+  .then((response) => response.json())
+  .then((data) => {
+    let movies = data.data
+    console.log(movies)
+    movies.forEach(movie => {
+      container.innerHTML += ` <li> ${movie.title} </li> `
+    });
+  })
 
   /** Codigo que debemos usar para mostrar los datos en el frontend
     let data = peliculas.data;
