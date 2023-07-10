@@ -65,7 +65,6 @@ window.onload = () => {
     });
 };
 
-
 /* let favoritos = [];
 
 window.onload = () => {

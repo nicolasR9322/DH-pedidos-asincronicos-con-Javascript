@@ -57,6 +57,7 @@ window.onload = () => {
             .then((response) => response.json())
             .then(() => {
                  alert("modificado!")
+                window.location.replace("http://127.0.0.1:5500/frontend/home.html");
             })
     })
 
@@ -83,6 +84,7 @@ window.onload = () => {
         .then((response) => response.json())
         .then(() => {
              alert("creado!")
+             window.location.replace("http://127.0.0.1:5500/frontend/home.html");
         })
 
     })
